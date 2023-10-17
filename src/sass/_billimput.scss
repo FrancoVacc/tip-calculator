@@ -1,0 +1,33 @@
+.input-container{
+    margin: 0 auto;
+    label{
+        font-family: $text-font;
+        color: $grayish-cyan;
+        font-size: .7rem;
+    }
+    div{
+        width: 100%;
+        display: flex;
+        input{
+            width: 100%;
+            border-radius: 5px;
+            padding: .5rem;
+            background-color: $very-light-grayish-cyan;
+            border-style: none;
+            text-align: right;
+            font-family: $text-font;
+            font-size: 1rem;
+            color: $very-dark-cyan;
+
+            &::placeholder{
+                color: $grayish-cyan;
+            }
+        }
+        img{
+            height: .8rem;
+            position: relative;
+            top: .9rem;
+            right: calc(100% - 1rem);
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.percent-container{
+    margin: 1rem auto;
+    p{
+        font-family: $text-font;
+        color: $grayish-cyan;
+        font-size: .7rem;
+    }
+
+    .button-container{
+        padding: .5rem;
+        display:grid;
+        grid-template-columns: 45% 45%;
+        column-gap: 10%;
+        row-gap: .5rem;
+
+        @media (min-width:425px) {
+            grid-template-columns: 30% 30% 30%;
+            column-gap: 5%;
+        }
+
+        button, input{
+            min-width: 30%;
+            padding: .5rem .2rem;
+            border-radius: 5px;
+            border-style: none;
+            font-family: $text-font;
+            font-size: 1rem;
+        }
+
+        button{
+            background-color: $very-dark-cyan;
+            color: $white;
+            &:hover{
+                background-color: $strong-cyan;
+                color: $very-dark-cyan;
+            }
+        }
+
+        input{
+            background-color: $very-light-grayish-cyan;
+            color: $dark-grayish-cyan;
+            text-align: right;
+        }
+    }
+   }

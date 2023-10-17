@@ -1,0 +1,43 @@
+@import "variables";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $light-grayish-cyan;
+}
+
+.img-container{
+    width: 50%;
+    padding: 1rem;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background-color: $white;
+    border-radius: 1rem;
+    padding: 1.3rem ;
+
+   @import "billimput";
+   @import "porcent-container";
+   @import "tipaount";
+
+   form{
+    @media(min-width:425px){
+        width: 400px;
+        margin: 0 .5rem;
+    }
+
+   }
+   @media(min-width: 425px){
+        max-width: 50%;
+        margin: 0 auto;
+        display: flex;
+   }
+}
+
+
+

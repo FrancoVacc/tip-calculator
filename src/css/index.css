@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&family=Space+Mono:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(185, 41%, 84%);
+}
+
+.img-container {
+  width: 50%;
+  padding: 1rem;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  padding: 1.3rem;
+}
+.container .input-container {
+  margin: 0 auto;
+}
+.container .input-container label {
+  font-family: "Space Mono", monospace;
+  color: hsl(184, 14%, 56%);
+  font-size: 0.7rem;
+}
+.container .input-container div {
+  width: 100%;
+  display: flex;
+}
+.container .input-container div input {
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: hsl(189, 41%, 97%);
+  border-style: none;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+  color: hsl(183, 100%, 15%);
+}
+.container .input-container div input::placeholder {
+  color: hsl(184, 14%, 56%);
+}
+.container .input-container div img {
+  height: 0.8rem;
+  position: relative;
+  top: 0.9rem;
+  right: calc(100% - 1rem);
+}
+.container .percent-container {
+  margin: 1rem auto;
+}
+.container .percent-container p {
+  font-family: "Space Mono", monospace;
+  color: hsl(184, 14%, 56%);
+  font-size: 0.7rem;
+}
+.container .percent-container .button-container {
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  column-gap: 10%;
+  row-gap: 0.5rem;
+}
+@media (min-width: 425px) {
+  .container .percent-container .button-container {
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 5%;
+  }
+}
+.container .percent-container .button-container button, .container .percent-container .button-container input {
+  min-width: 30%;
+  padding: 0.5rem 0.2rem;
+  border-radius: 5px;
+  border-style: none;
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+}
+.container .percent-container .button-container button {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+}
+.container .percent-container .button-container button:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+.container .percent-container .button-container input {
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(186, 14%, 43%);
+  text-align: right;
+}
+.container .tip-container {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background-color: hsl(183, 100%, 15%);
+  font-family: "Space Mono", monospace;
+}
+.container .tip-container div {
+  width: 100%;
+  display: flex;
+  margin: 0.7rem auto;
+}
+.container .tip-container div div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.container .tip-container div div h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 0.8rem;
+}
+.container .tip-container div div p {
+  color: hsl(184, 14%, 56%);
+  font-size: 0.6rem;
+}
+.container .tip-container div .amount {
+  width: 50%;
+  color: hsl(172, 67%, 45%);
+  font-size: 1.5rem;
+  text-align: right;
+}
+.container .tip-container button {
+  position: relative;
+  top: calc(15% - 1px);
+  border-style: none;
+  border-radius: 5px;
+  padding: 0.7rem 0.5rem;
+  width: 100%;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  font-family: "Space Mono", monospace;
+  font-size: 0.8rem;
+  margin: 0 auto;
+}
+.container .tip-container .cancel-button {
+  color: hsl(183, 100%, 15%);
+  background-color: rgb(13, 104, 109);
+}
+@media (min-width: 425px) {
+  .container .tip-container {
+    width: 400px;
+    margin: 0 0.5rem;
+  }
+}
+@media (min-width: 425px) {
+  .container form {
+    width: 400px;
+    margin: 0 0.5rem;
+  }
+}
+@media (min-width: 425px) {
+  .container {
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
