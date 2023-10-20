@@ -25,7 +25,7 @@ body{
    @import "porcent-container";
    @import "tipaount";
 
-   form{
+   .form{
     @media(min-width:425px){
         width: 400px;
         margin: 0 .5rem;

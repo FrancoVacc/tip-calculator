@@ -1,9 +1,22 @@
 .input-container{
     margin: 0 auto;
-    label{
-        font-family: $text-font;
-        color: $grayish-cyan;
-        font-size: .7rem;
+    .label-container{
+        display: flex;
+        justify-content: space-between;
+        label{
+            font-family: $text-font;
+            color: $grayish-cyan;
+            font-size: .7rem;
+        }
+        .notError{
+            display: none;
+        }
+        .error{
+            color: red;
+            font-family: $text-font;
+            font-size: .7rem;
+        }
+
     }
     div{
         width: 100%;
@@ -21,6 +34,9 @@
 
             &::placeholder{
                 color: $grayish-cyan;
+            }
+            .errorInput{
+                outline: 1px solid red;
             }
         }
         img{

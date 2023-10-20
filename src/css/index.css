@@ -25,9 +25,21 @@ body {
 .container .input-container {
   margin: 0 auto;
 }
-.container .input-container label {
+.container .input-container .label-container {
+  display: flex;
+  justify-content: space-between;
+}
+.container .input-container .label-container label {
   font-family: "Space Mono", monospace;
   color: hsl(184, 14%, 56%);
+  font-size: 0.7rem;
+}
+.container .input-container .label-container .notError {
+  display: none;
+}
+.container .input-container .label-container .error {
+  color: red;
+  font-family: "Space Mono", monospace;
   font-size: 0.7rem;
 }
 .container .input-container div {
@@ -47,6 +59,9 @@ body {
 }
 .container .input-container div input::placeholder {
   color: hsl(184, 14%, 56%);
+}
+.container .input-container div input .errorInput {
+  outline: 1px solid red;
 }
 .container .input-container div img {
   height: 0.8rem;
@@ -141,7 +156,7 @@ body {
   font-size: 0.8rem;
   margin: 0 auto;
 }
-.container .tip-container .cancel-button {
+.container .tip-container .disabled {
   color: hsl(183, 100%, 15%);
   background-color: rgb(13, 104, 109);
 }
@@ -152,7 +167,7 @@ body {
   }
 }
 @media (min-width: 425px) {
-  .container form {
+  .container .form {
     width: 400px;
     margin: 0 0.5rem;
   }

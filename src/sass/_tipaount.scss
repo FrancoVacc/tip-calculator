@@ -41,12 +41,13 @@
         font-family: $text-font;
         font-size: .8rem;
         margin: 0 auto;
+
     }
-    .cancel-button{
+    .disabled{
         color: $very-dark-cyan;
         background-color: $cancel-bg;
     }
-
+    
     @media(min-width: 425px){
         width: 400px;
         margin: 0 .5rem;
